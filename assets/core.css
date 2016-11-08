@@ -1,0 +1,243 @@
+html, body {
+	padding:0px;
+	height:100%;
+}
+
+body {
+	margin:0px;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+}
+
+@font-face {
+    font-family: sanFransisco;
+    src: url('SF-UI-Display-Regular.otf');
+    font-weight: 400;
+}
+@font-face {
+    src: url('SF-UI-Display-Bold.otf');
+    font-weight: 700;
+}
+@font-face {
+    src: url('SF-UI-Display-Semibold.otf');
+    font-weight: 600;
+}
+
+
+section.screen {
+	margin:0px;
+	width:100%;
+	position: relative;
+	padding:75px 0px;
+	background:#fff;
+}
+
+section.screen.dark {
+	background:#222;
+	color:#fff;
+}
+
+
+section.screen #name {
+	position:absolute;
+	font-family: 'Lato', sans-serif;
+	left:60px;
+	top:20%;
+}
+
+section.screen #name h1 {
+	font-size:50px;
+	font-weight:100;
+	margin:0px;
+	color:#fff;
+}
+
+section.screen #name h2 {
+	font-size:40px;
+	font-weight:400;
+	margin:0px 3px;
+	color:#fff;
+}
+
+
+section.screen#first {
+	background: #00c4fc;
+	height:100%;
+	padding:0px;
+	cursor:default;
+	position:relative;
+	z-index:2;
+}
+section.screen#first a.button span:hover {
+	color:#00c4fc;
+}
+
+section.screen#first #image {
+	position:absolute;
+	background:url('brychan.png');
+	background-size: contain;
+	background-position: right;
+	background-repeat: no-repeat;
+	width:442px;
+	right:0px;
+	top:20px;
+	bottom:0px;
+}
+
+nav {
+	background:#00c4fc;
+	color:#fff;
+	height:50px;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	opacity:0.0;
+	z-index:10;
+}
+
+
+nav > span#title {
+	line-height:50px;
+	font-size:19px;
+	font-weight:400;
+	margin-left:20px;
+}
+
+nav > span#title > span {
+	font-weight:100;
+}
+  
+section.screen #keys {
+	text-align:left;
+	position:absolute;
+	font-family: 'Lato', sans-serif;
+	left:50px;
+	width:70%;
+	min-width:250px;
+	top:50%;
+	color:#fff;
+}
+
+section.screen #keys h3 {
+	font-weight:400;
+	font-size:20px !important;
+}
+section.screen #keys span {
+	font-weight:100;
+	font-size:18px;
+}
+
+
+
+footer {
+	font-size:16px;
+	padding:25px 0px;
+	background:#fff;
+	cursor:default;
+}
+footer i {
+	margin-top:10px;
+}
+footer a {
+	text-decoration: none;
+	margin:3px 5px;
+	font-size:20px;
+	color:#555;
+}
+footer a:hover {
+	color:#111;
+}
+
+
+a.button {
+	font-weight:500;
+	text-decoration: none;
+	margin:auto;
+}
+a.button span {
+	display: inline-block;
+	border:solid 1px #fff;
+	padding:15px 10px 15px 10px;
+	border-radius: 5px;
+	color:#fff;
+	font-size:18px;
+	font-weight:300;
+}
+
+
+a.button:hover span {
+	color:#333;
+	background:#fff;
+}
+a.button:active span {
+	color:#333;
+	background:rgba(255,255,255,0.5);
+	border:solid 1px rgba(255,255,255,0.5);
+}
+
+.yesMobile {
+	display:none;
+}
+	
+	
+
+@media (max-width:459px) {
+	section.screen #name h1 {
+		font-size:25px !important;
+	}
+}
+@media (max-height:399px) {
+	section.screen #name {
+		top:80px;
+	}
+	section.screen #keys {
+		top:200px;
+	}
+}
+@media (max-height:759px) {
+	section.screen#first {
+		height:760px;
+	}
+}
+
+@media (max-width:340px) {
+	section.screen #name h1 {
+		font-weight:300;
+		font-size:25px !important;
+	}
+	section.screen #keys h3 {
+		margin-bottom:5px;
+	}
+	section.screen #keys span.text {
+		font-weight:400;
+		font-size:16px !important;
+	}
+	section.screen #keys a span {
+		font-weight:400;
+	}
+	a.button.mobSmall span {
+		font-size:16px;
+		padding:10px 5px 10px 5px;
+	}
+	.nomobile {
+		display: none;
+	}
+	.yesMobile {
+		display:inline;
+	}
+	section.screen #keys {
+		width:250px !important
+	}
+}
+@media (max-width:779px) {
+	section.screen #name h1 {
+		font-size:40px;
+	}
+	section.screen #name h2 {
+		font-size:30px;
+	}
+	section.screen #keys {
+		width:300px;
+	}
+}
